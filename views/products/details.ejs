@@ -1,0 +1,9 @@
+<%- contentFor('title') %>
+Product Details
+
+<%- contentFor('body') %>
+<h1><%= product.name %></h1>
+<p><%= product.description %></p>
+<p><%= product.filename || 'No PDF uploaded' %></p>
+<a class="btn btn-primary" href="/products/<%= product.product_id %>/upload">Upload PDF</a>
+<a class="btn btn-primary" href="/products">Back to Products</a>
